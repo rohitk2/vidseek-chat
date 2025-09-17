@@ -10,14 +10,69 @@ const Index = () => {
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isSearching, setIsSearching] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
+  const [isUploading, setIsUploading] = useState<boolean>(false);
+  const [segments, setSegments] = useState<any[]>([]);
 
-  const handleFileUpload = (file: File) => {
-    setUploadedFile(file);
+  const handleFileUpload = async (file: File) => {
+    setIsUploading(true);
+    setUploadProgress(0);
+    
+    try {
+      // Create FormData to send the file
+      const formData = new FormData();
+      formData.append('file', file);
+
+      // Use XMLHttpRequest for progress tracking
+      const xhr = new XMLHttpRequest();
+      
+      // Set up progress tracking
+      xhr.upload.addEventListener('progress', (event) => {
+        if (event.lengthComputable) {
+          const percentComplete = (event.loaded / event.total) * 100;
+          setUploadProgress(Math.round(percentComplete));
+        }
+      });
+
+      // Set up completion handler
+      xhr.addEventListener('load', () => {
+        if (xhr.status === 200) {
+          const result = JSON.parse(xhr.responseText);
+          console.log('Upload successful:', result);
+          setUploadedFile(file);
+        } else {
+          console.error('Upload failed:', xhr.statusText);
+        }
+        setIsUploading(false);
+        setUploadProgress(0);
+      });
+
+      // Set up error handler
+      xhr.addEventListener('error', () => {
+        console.error('Error uploading file');
+        setIsUploading(false);
+        setUploadProgress(0);
+      });
+
+      // Send the request
+      xhr.open('POST', 'http://localhost:8000/upload-video');
+      xhr.send(formData);
+      
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      setIsUploading(false);
+      setUploadProgress(0);
+    }
   };
 
-  const handleSearch = async (query: string) => {
+  const handleSearch = async (query: string, segmentsData?: any[]) => {
     setIsSearching(true);
     setSearchQuery(query);
+    
+    // Store segments data if provided
+    if (segmentsData) {
+      setSegments(segmentsData);
+    }
     
     // Simulate search processing
     setTimeout(() => {
@@ -29,11 +84,18 @@ const Index = () => {
     setUploadedFile(null);
     setSearchQuery('');
     setIsSearching(false);
+    setSegments([]);
   };
 
   // Upload state - show VideoUpload component
   if (!uploadedFile) {
-    return <VideoUpload onUpload={handleFileUpload} />;
+    return (
+      <VideoUpload 
+        onUpload={handleFileUpload} 
+        isUploading={isUploading}
+        uploadProgress={uploadProgress}
+      />
+    );
   }
 
   // Analysis state - show transformed interface
@@ -90,7 +152,7 @@ const Index = () => {
 
         {/* Video Chunks Section */}
         <section>
-          <VideoChunks searchQuery={searchQuery} />
+          <VideoChunks searchQuery={searchQuery} segments={segments.length > 0 ? segments : undefined} />
         </section>
 
         {/* Chatbot Section */}

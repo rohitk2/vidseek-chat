@@ -71,3 +71,24 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Running the Application
+
+To run the vidseek-chat application, follow these steps:
+
+1. Kill any processes running on ports 8000, 5173, and 8080:
+```bash
+lsof -ti:8000,5173,8080 | xargs kill -9
+```
+
+2. Run the backend server:
+```bash
+python backend/main.py
+```
+
+3. Start the frontend development server:
+```bash
+npm run dev
+```
+
+The backend will run on http://localhost:8000 and the frontend will run on http://localhost:5173 (or another available port).

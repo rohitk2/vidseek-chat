@@ -1,0 +1,92 @@
+[
+  {
+    "start": 0.0,
+    "end": 20.0,
+    "text": "In today's video, you're going to get a comprehensive idea of everything you can do with Cloud 3 Opus.  Supposedly, within the industry, Cloud 3 is better than GBT4.  So in today's video, we're going to see whether or not you'd want to spend that $20  and all the capabilities associated with this platform.  All right, y'all, let's go ahead and just show you everything you can do with the Cloud Platform  as fast as possible so you can get an idea of whether or not you'd want to purchase this kind of"
+  },
+  {
+    "start": 20.0,
+    "end": 40.0,
+    "text": "service. So, wrap the bat. Let's learn how we even enable this in order to do so each  going to go to your account settings. In the settings, we have three different tabs.  First one being profile. This is just going to be your name and what the chatbot will call you.  The second tab here is billing and this is what gives us access to Cloud Pro.  These are the advantages with Cloud Pro. The first one being Cloud Usage. What this means in this  context is how many times we can, you know, basically, proctor a chat and keep talking with the chat"
+  },
+  {
+    "start": 40.0,
+    "end": 60.0,
+    "text": "bot. If you're familiar with GBT, you're familiar with the fact that sometimes you can keep conversating  and then it would be like, hey, not available until 4 p.m. Same situation here. The second one being,  you get priority access during high traffic times. This can be associated with like maybe they put  on new update. Being a pro user, you still get access to the model at a more stable rate"
+  },
+  {
+    "start": 60.0,
+    "end": 80.0,
+    "text": "comparative to maybe using it on a free version. Third one, which is probably the big one here  because we get access to Cloud 3 Opus, which is supposedly better than GBT 4 and finally,  getting access to new features. Let's go and jump into this model today. First,  make sure to think to note about this platform as you can not generate images. So, for example,  if I were to input, generate an image of a dog and hit enter here, you will see that this currently"
+  },
+  {
+    "start": 80.0,
+    "end": 100.0,
+    "text": "does not have the ability to generate AI images like we see with either co-pilot or chat GBT.  Boom. I apologize, but I do not have the ability to generate, produce, edit, manipulate, or create  images. Another feature to take note of is that you have the ability to choose between the different  models here. So we get Hiku, Sonnet, Opus to give you a nice little graph here. This is kind of how"
+  },
+  {
+    "start": 100.0,
+    "end": 120.0,
+    "text": "they've structured the quality of the inputs and the outputs associated with the model. If you're  using Pro, you're probably just going to opt in for Opus most of the time. Think of these other  models like the version between chat GBT 4 and 3.5. You probably lean towards the most intelligent  model, wind dealing with workflow and your progress. Second major thing to note is that this model"
+  },
+  {
+    "start": 120.0,
+    "end": 140.0,
+    "text": "does not have access to the internet. So if I try something like, can you find me an article on  the EV industry and hit enter here from this response? We can see that it does not have access to  the internet. I apologize, but I don't have the ability to search internet or access external  articles. So even if I provide an external article as I did here, it still won't be able to"
+  },
+  {
+    "start": 140.0,
+    "end": 160.0,
+    "text": "internalize it or summarize it. Now that you know the ground level of what it can do, let's find out  what it can do in the context of your workflow and why you would choose to use a service like this.  First cool thing that this model can do is the ability to actually see pictures. So we're going  to attach an image here. The image I'm attaching is a dog or specifically an Australian shepherd.  So it's going to ask what's in the picture and what the breed is. Hit enter here and we should get"
+  },
+  {
+    "start": 160.0,
+    "end": 180.0,
+    "text": "the answer of a dog, not Australian shepherd. And there you go. So as the ability to read and  internalize images, the image shows a dog standing in grass with white flowers in the background.  Okay, got that. The dog appears to be not Australian shepherd based on its medium size.  This can go past that. So for example, if you have an invoice that's like physical, you can take a"
+  },
+  {
+    "start": 180.0,
+    "end": 200.0,
+    "text": "picture of it and it'll be actually actually be able to read the different numbers and the rows  and the text and everything of that nature on top of that. If you wrote down notes on a sticky note,  took a picture and then here it could transcribe it, stuff like that. Therefore if you can see  images and understand what's in the image, you can also read and analyze PDFs or just like any type  of large format in that context. I'm going to attach a PDF. Notice that we have the ability to attach"
+  },
+  {
+    "start": 200.0,
+    "end": 220.0,
+    "text": "five files and on top of that 10 megabytes each. Let's go and check out this research paper. This  research paper is a study on social media and its correlation with mental health. So to gut check  on whether or not this thing can actually read the PDF, we're going to find a very specific statistic  to test it on. Right here we got the total number of individuals aged 18 to 23 who reported experiencing"
+  },
+  {
+    "start": 220.0,
+    "end": 240.0,
+    "text": "major depressive episode in the past year increased by 83% between 2008 and 2018. Let's see if  it can find this. I want to add and rephrase the question a little bit, but we got between 2008 and  2018. How many individuals between or aged 18 to 23 experienced a major depressive episode. So if  this works correctly, we should see that percentage or specifically we should see this output 83%."
+  },
+  {
+    "start": 240.0,
+    "end": 260.0,
+    "text": "Mind you as well, this is a pretty big file here with a lot of text. So if it finds this,  that's pretty solid. There we go. It did take a couple seconds, but it was able to find that 83%  statistic that's relevant to us. What's super cool about adding an attachment to a chat like this"
+  },
+  {
+    "start": 260.0,
+    "end": 280.0,
+    "text": "is that we also get this nice little sidebar here that shows the relevant content that we're  proctoring for. And on top of that, I mean, we can choose different types of font if you choose  it. So like I said before, it can handle Excel sheets, but not in the way you think. In order  for it to actually read this data, we're going to need to take a screenshot. So I'm going to go ahead  and come over here and just do this. And to check if this actually works or not, we're going to go"
+  },
+  {
+    "start": 280.0,
+    "end": 300.0,
+    "text": "ahead and gut check it by basically asking it, what is the difference for the phone cost coming back  over here. Let's go and attach it. Here is our screenshot of our Excel sheet. And we're going to  go ahead and ask the difference for this. We're expecting a minus 46 year for the phone cost. What was  the found difference? You'd enter and there you go. It was actually able to find the data that we"
+  },
+  {
+    "start": 300.0,
+    "end": 320.0,
+    "text": "cared about. Projective phone cost, the actual phone cost and give us our final answer here, which  was minus 46. Pass what I just showed you. There is a lot more that you can do with claw 3 when it comes  to actually just talking to it, either writing an email or writing out code. So I encourage you to check  out that video right there. If you want to see more in depth on those features, but for now, you  have a comprehensive idea what the claw 3 model does for us. And whether or not you'd want to spend"
+  },
+  {
+    "start": 320.0,
+    "end": 340.0,
+    "text": "the 20 bucks here, JGBT, copilot, Gemini, there's too many. So I'm actually going to leave a video at  the very end here that you can check out and see which chatbot you would actually want to use.  Kind of break it down by use case because a lot of times it really just depends on use case. I'll see  in the next video. This video helps you break down which chatbot you should choose and where you"
+  },
+  {
+    "start": 340.0,
+    "end": 349.12,
+    "text": "should put your 20 bucks. That's a random video. That's my face. Make sure to subscribe. I do daily  content here. I'll see you in the next video."
+  }
+]

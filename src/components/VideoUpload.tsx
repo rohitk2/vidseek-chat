@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 
 interface VideoUploadProps {
   onUpload: (file: File) => void;
+  isUploading?: boolean;
+  uploadProgress?: number;
 }
 
-export const VideoUpload = ({ onUpload }: VideoUploadProps) => {
+export const VideoUpload = ({ onUpload, isUploading = false, uploadProgress = 0 }: VideoUploadProps) => {
   const [isDragOver, setIsDragOver] = useState(false);
 
   const handleDragOver = useCallback((e: React.DragEvent) => {
@@ -79,6 +81,7 @@ export const VideoUpload = ({ onUpload }: VideoUploadProps) => {
             accept="video/*"
             onChange={handleFileSelect}
             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+            disabled={isUploading}
           />
           
           <div className="space-y-6">
@@ -97,10 +100,10 @@ export const VideoUpload = ({ onUpload }: VideoUploadProps) => {
             
             <div className="space-y-3">
               <h3 className="text-2xl font-semibold">
-                {isDragOver ? 'Drop your video here' : 'Choose your video file'}
+                {isUploading ? 'Uploading...' : isDragOver ? 'Drop your video here' : 'Choose your video file'}
               </h3>
               <p className="text-muted-foreground">
-                Drag and drop your MP4 file here, or click to browse
+                {isUploading ? 'Please wait while your video is being uploaded' : 'Drag and drop your MP4 file here, or click to browse'}
               </p>
             </div>
             
@@ -108,12 +111,29 @@ export const VideoUpload = ({ onUpload }: VideoUploadProps) => {
               variant="outline" 
               size="lg"
               className="transition-bounce hover:shadow-glow"
+              disabled={isUploading}
             >
               <Upload className="mr-2 h-5 w-5" />
-              Select Video File
+              {isUploading ? 'Uploading...' : 'Select Video File'}
             </Button>
           </div>
         </div>
+
+        {/* Progress Bar */}
+        {isUploading && (
+          <div className="mt-4 w-full">
+            <div className="flex justify-between text-sm text-muted-foreground mb-2">
+              <span>Uploading...</span>
+              <span>{uploadProgress}%</span>
+            </div>
+            <div className="w-full bg-muted rounded-full h-2">
+              <div 
+                className="bg-primary h-2 rounded-full transition-all duration-300 ease-out"
+                style={{ width: `${uploadProgress}%` }}
+              ></div>
+            </div>
+          </div>
+        )}
 
         {/* Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">

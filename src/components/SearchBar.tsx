@@ -4,17 +4,44 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 interface SearchBarProps {
-  onSearch: (query: string) => void;
+  onSearch: (query: string, segments?: any[]) => void;
   isLoading?: boolean;
 }
 
 export const SearchBar = ({ onSearch, isLoading = false }: SearchBarProps) => {
   const [query, setQuery] = useState('');
+  const [analyzing, setAnalyzing] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
-      onSearch(query.trim());
+      setAnalyzing(true);
+      
+      try {
+        // Call the backend API - send string directly
+        const response = await fetch('http://localhost:8000/find-best-segments', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain',
+          },
+          body: query.trim(),
+        });
+        
+        const result = await response.json();
+        console.log('Backend response:', result);
+        
+        // Pass the segments data back to parent
+        if (result.status === 'success' && result.segments) {
+          onSearch(query.trim(), result.segments);
+        } else {
+          onSearch(query.trim());
+        }
+      } catch (error) {
+        console.error('Error calling backend:', error);
+        onSearch(query.trim());
+      } finally {
+        setAnalyzing(false);
+      }
     }
   };
 
@@ -37,11 +64,11 @@ export const SearchBar = ({ onSearch, isLoading = false }: SearchBarProps) => {
               
               <Button
                 type="submit"
-                disabled={isLoading || !query.trim()}
+                disabled={analyzing || isLoading || !query.trim()}
                 variant="premium"
                 className="ml-3 transition-smooth"
               >
-                {isLoading ? (
+                {analyzing || isLoading ? (
                   <div className="h-5 w-5 animate-spin rounded-full border-2 border-white/20 border-t-white" />
                 ) : (
                   <Sparkles className="h-5 w-5" />

@@ -20,7 +20,7 @@ export const Chatbot = ({ videoFileName }: ChatbotProps) => {
     {
       id: '1',
       role: 'assistant',
-      content: `Hi! I've analyzed your video${videoFileName ? ` "${videoFileName}"` : ''} and I'm ready to answer any questions. You can ask me about specific scenes, objects, people, or anything else you noticed in the video.`,
+      content: `Hi! I've analyzed your video${videoFileName ? ` "${videoFileName}"` : ''} and I'm ready to answer any questions. You can ask me about specific scenes, objects, people, timestamps, or anything else you noticed in the video.`,
       timestamp: new Date()
     }
   ]);
@@ -42,25 +42,48 @@ export const Chatbot = ({ videoFileName }: ChatbotProps) => {
     setInput('');
     setIsLoading(true);
 
-    // Simulate AI response (replace with actual API call)
-    setTimeout(() => {
+    try {
+      // Call the backend chat endpoint
+      const response = await fetch('http://localhost:8000/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage.content,
+          video_filename: videoFileName
+        }),
+      });
+      
+      const result = await response.json();
+      
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: `That's a great question about "${userMessage.content}". Based on my analysis of your video, I can see several relevant segments. The most prominent scenes occur around the 2:34 and 7:42 timestamps. Would you like me to show you specific frames or provide more detailed analysis?`,
+        content: result.status === 'success' ? result.response : 'I apologize, but I encountered an error processing your request.',
         timestamp: new Date()
       };
       
       setMessages(prev => [...prev, aiMessage]);
+    } catch (error) {
+      console.error('Error calling chat API:', error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: 'I apologize, but I\'m having trouble connecting to the chat service. Please try again.',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
       setIsLoading(false);
-    }, 1500);
+    }
   };
 
   const suggestedQuestions = [
-    "What are the main subjects in this video?",
-    "Can you describe the setting or environment?",
-    "Are there any interesting details I might have missed?",
-    "What happens around the 5-minute mark?"
+    "What are the main topics discussed in this video?",
+    "Can you summarize what happens around the 2-minute mark?",
+    "What specific details are mentioned about the subject?",
+    "Are there any important timestamps I should know about?"
   ];
 
   return (

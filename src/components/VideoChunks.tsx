@@ -4,21 +4,28 @@ import videoPlaceholder1 from '@/assets/video-placeholder-1.jpg';
 import videoPlaceholder2 from '@/assets/video-placeholder-2.jpg';
 import videoPlaceholder3 from '@/assets/video-placeholder-3.jpg';
 
-interface VideoChunk {
-  id: string;
-  timestamp: string;
-  confidence: number;
-  description: string;
-  thumbnail: string;
+interface VideoSegment {
+  start: number;
+  end: number;
+  relevance_score: number;
+  explanation: string;
+  timestamp_display: string;
 }
 
 interface VideoChunksProps {
   searchQuery?: string;
+  segments?: VideoSegment[];
 }
 
-export const VideoChunks = ({ searchQuery }: VideoChunksProps) => {
-  // Hardcoded placeholder data
-  const chunks: VideoChunk[] = [
+export const VideoChunks = ({ searchQuery, segments }: VideoChunksProps) => {
+  // Use segments from API or fallback to placeholder data
+  const displayChunks = segments ? segments.map((segment, index) => ({
+    id: (index + 1).toString(),
+    timestamp: segment.timestamp_display,
+    confidence: segment.relevance_score / 10, // Convert 0-10 scale to 0-1
+    description: segment.explanation,
+    thumbnail: [videoPlaceholder1, videoPlaceholder2, videoPlaceholder3][index % 3]
+  })) : [
     {
       id: '1',
       timestamp: '02:34',
@@ -51,30 +58,23 @@ export const VideoChunks = ({ searchQuery }: VideoChunksProps) => {
           </h2>
           <div className="flex items-center text-sm text-muted-foreground">
             <Zap className="h-4 w-4 mr-1" />
-            {chunks.length} matches found
+            {segments ? segments.length : displayChunks.length} matches found
           </div>
         </div>
-        
-        {searchQuery && (
-          <p className="text-muted-foreground">
-            Showing the most relevant video frames based on AI analysis
-          </p>
-        )}
+        <p className="text-muted-foreground">
+          {segments ? 'Showing the most relevant video frames based on AI analysis' : 'Showing placeholder video segments'}
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {chunks.map((chunk, index) => (
-          <div
-            key={chunk.id}
-            className="group relative bg-card rounded-xl shadow-card hover:shadow-elevated transition-smooth border border-border/50 overflow-hidden"
-            style={{ animationDelay: `${index * 100}ms` }}
-          >
+        {displayChunks.map((chunk) => (
+          <div key={chunk.id} className="group relative bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-primary/50">
             {/* Thumbnail */}
-            <div className="relative aspect-video overflow-hidden">
-              <img
-                src={chunk.thumbnail}
-                alt={`Video frame at ${chunk.timestamp}`}
-                className="w-full h-full object-cover transition-smooth group-hover:scale-105"
+            <div className="relative aspect-video bg-muted overflow-hidden">
+              <img 
+                src={chunk.thumbnail} 
+                alt={`Video segment at ${chunk.timestamp}`}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               
               {/* Play overlay */}
@@ -118,11 +118,11 @@ export const VideoChunks = ({ searchQuery }: VideoChunksProps) => {
                 {chunk.description}
               </p>
               
-              <div className="mt-4 flex items-center justify-between">
+              <div className="flex items-center justify-between mt-4">
                 <Button variant="outline" size="sm">
                   View Details
                 </Button>
-                <Button variant="ghost" size="sm">
+                <Button variant="outline" size="sm">
                   Add to Highlights
                 </Button>
               </div>
@@ -130,17 +130,6 @@ export const VideoChunks = ({ searchQuery }: VideoChunksProps) => {
           </div>
         ))}
       </div>
-
-      {/* No results state (if needed) */}
-      {chunks.length === 0 && (
-        <div className="text-center py-12">
-          <div className="text-4xl mb-4">🔍</div>
-          <h3 className="text-xl font-semibold mb-2">No matches found</h3>
-          <p className="text-muted-foreground">
-            Try adjusting your search terms or upload a different video
-          </p>
-        </div>
-      )}
     </div>
   );
 };
