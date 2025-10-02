@@ -1,0 +1,597 @@
+[
+  {
+    "start": 0.0,
+    "end": 20.0,
+    "text": "Then let's go.  All right.  So I'm on the.  I'm inside the API repo.  Also, should I just, I guess I should, you, they actually get pull.  Or maybe not."
+  },
+  {
+    "start": 20.0,
+    "end": 40.0,
+    "text": "Yeah, actually do that.  I'm going to get stash that first get stash.  Yeah, just stash.  Now pull it."
+  },
+  {
+    "start": 40.0,
+    "end": 60.0,
+    "text": "Okay, there you go.  All these changes right now get stash apply just to.  Bring back the.  Okay.  Let's go.  All right.  Maybe do the same thing for.  I know every piece from you're having issues with some core issues."
+  },
+  {
+    "start": 60.0,
+    "end": 80.0,
+    "text": "Oh, yeah.  Yeah, we were having issues with that.  We need to fix that too.  Okay, okay.  So that that's that's still an issue.  No, I'm not having issues locally, but we have to figure out what's happening on our side."
+  },
+  {
+    "start": 80.0,
+    "end": 100.0,
+    "text": "Just do this.  Okay, that's a new thing I'm learning.  I'm actually not.  I'm wondering if the rebase is the reverse like the same thing actually, but."
+  },
+  {
+    "start": 100.0,
+    "end": 120.0,
+    "text": "Just to be safe, I stash things first.  Yeah.  I'm not going to be able to do anything, anything changes, then bring in.  Whatever from remote and then I apply the stash.  You can actually stash tons of a lot of a lot of like changes."
+  },
+  {
+    "start": 120.0,
+    "end": 140.0,
+    "text": "And you can select which stash you want to bring back in.  You can read that on that later.  Yeah.  Well, every time I work with you, I learned something new last time and learn FG.  We are always learning something new every day.  Yeah, for sure."
+  },
+  {
+    "start": 140.0,
+    "end": 160.0,
+    "text": "Anyways, then I'm forgetting how you run this.  Just thought there's a show script that's just run.  You can.  It's just dots dot forward slash.  Yeah, dot forward slash run."
+  },
+  {
+    "start": 160.0,
+    "end": 180.0,
+    "text": "Dot that's it.  You're in MVP folder.  You have to go back to.  Okay, all right.  This error is flexible press."
+  },
+  {
+    "start": 180.0,
+    "end": 200.0,
+    "text": "There we go.  Try to.  Open up the inside the API folder.  Open up the by project.  Let's see.  So API.  I project those aren't folders.  Go go go down."
+  },
+  {
+    "start": 200.0,
+    "end": 220.0,
+    "text": "Next to the read me file.  There you go.  Just about the read me file.  Yeah, flask.  Compress.  Okay, try.  Try running.  poetry install.  Flask.  I'm not sure why this is not working."
+  },
+  {
+    "start": 220.0,
+    "end": 240.0,
+    "text": "I think you have to to source the environment first.  Yeah, you have to source it first.  Oh, yeah, you have to run source.  The end."
+  },
+  {
+    "start": 240.0,
+    "end": 260.0,
+    "text": "And forward slash ban.  And then.  Then as in binary.  No, no, bin.  For slash activate.  Okay, now go up twice and run the."
+  },
+  {
+    "start": 260.0,
+    "end": 280.0,
+    "text": "It's actually flask compress with.  Flask comp.  Compress with a hyphen.  You are.  Flask.  Yeah, I see it here.  It's it's flash.  It's actually flask."
+  },
+  {
+    "start": 280.0,
+    "end": 300.0,
+    "text": "Oh, no, it's.  Is it poetry install report tree add try add?  I think it's admin.  Maybe.  You follow back is already present by project was kicked."
+  },
+  {
+    "start": 300.0,
+    "end": 320.0,
+    "text": "If you want to update that up.  Okay.  I mean try to update it.  Let's let's see.  No harming doing that.  Just run up poetry update.  Package.  Flask comp.  Press then."
+  },
+  {
+    "start": 320.0,
+    "end": 340.0,
+    "text": "Okay, it's good.  We're going to update.  We're going to update.  Okay, wait.  Yeah, yeah.  Yeah, no, let later on.  Like let's see what happens.  Okay.  So after this poetry update.  Then you try to run to execute.  Deer on script again."
+  },
+  {
+    "start": 340.0,
+    "end": 360.0,
+    "text": "All right.  Actually, no, not right.  Just as many.  Just go up a little bit."
+  },
+  {
+    "start": 360.0,
+    "end": 380.0,
+    "text": "Doppler.  Okay, looks like a Doppler issue.  Result.  Okay.  Just go down a little bit.  Just a little bit.  Okay, stop.  Go.  Go up just a little bit more."
+  },
+  {
+    "start": 380.0,
+    "end": 400.0,
+    "text": "Okay.  All right.  Filter converter.  All right, you can go down now.  Just a little bit.  Just at the end of the air.  All right.  In fact, three."
+  },
+  {
+    "start": 400.0,
+    "end": 420.0,
+    "text": "This guy says.  All right, it's good.  I can almost dump and expect a drugment."
+  },
+  {
+    "start": 420.0,
+    "end": 440.0,
+    "text": "Wow.  Something like compatibility here.  Alright.  Very.  I'm wondering now if"
+  },
+  {
+    "start": 440.0,
+    "end": 460.0,
+    "text": "Okay  Road back on all the  Revered all the changes on this fire on on on poetry log  I think you can do that on on on the git"
+  },
+  {
+    "start": 460.0,
+    "end": 480.0,
+    "text": "Tool in there like on the left side  You see like a yeah, you can just not done this before let me let me try see what I can do  Just open it and just stretch it up a bit rock  Do you see the the error going back on the on the right side in there?"
+  },
+  {
+    "start": 480.0,
+    "end": 500.0,
+    "text": "On the same line here this car changes there you go  Just this car changes. Yes, this car file  You can close down now  Working tree all right, let's actually"
+  },
+  {
+    "start": 500.0,
+    "end": 520.0,
+    "text": "Remove the vn file completely. You're gonna clean clean it up  Back to the terminal. Oh, I see okay, so  Actually, you can do that you can do this either way whatever you can or can't just lay that in there. Yeah"
+  },
+  {
+    "start": 520.0,
+    "end": 540.0,
+    "text": "Right  As long as removed from this okay, right now run python  Dash M  No, then dash  Pip"
+  },
+  {
+    "start": 540.0,
+    "end": 560.0,
+    "text": "And then the end  Vm and then Vm again like this no no no forward slash  You're using the Vm the Vm  More  Yeah, you're stalling the Vm in a Vm folder. That's basically no, it's actually not pit. No, no, no, it's not pips. Sorry"
+  },
+  {
+    "start": 560.0,
+    "end": 580.0,
+    "text": "Remove piped from there. You're using the Vm module to create a Vm folder. That's basically what this script makes  Yeah, this command means actually  All right now run the source again"
+  },
+  {
+    "start": 580.0,
+    "end": 600.0,
+    "text": "So what is this to this creates a Vm?  Yeah, it's creates a virtual environment so we can work so we can run things on yeah  All right just run this source command again  That same one we're yeah that one"
+  },
+  {
+    "start": 600.0,
+    "end": 620.0,
+    "text": "Now run poetry install  And just that  You  Yes, should we try to use that command the flash compresses has been installed"
+  },
+  {
+    "start": 620.0,
+    "end": 640.0,
+    "text": "Curious track try to run that  That's if it errors out again  What's this okay we're going through this revision issue again  Just go down go down to the last line"
+  },
+  {
+    "start": 640.0,
+    "end": 660.0,
+    "text": "Screeb's revision okay, you would have to do that same thing. I think you changed the database somehow  We have to do the same thing we did last time going back to yeah  I've told me of the"
+  },
+  {
+    "start": 660.0,
+    "end": 680.0,
+    "text": "Graphic a database  It's not ready  Open up the Olympic it's the first table of the record just the work like that  There we go, okay  Go back to the API  So we go do we go to"
+  },
+  {
+    "start": 680.0,
+    "end": 700.0,
+    "text": "Lambick actually yeah open up that versions  Actually, there's a new migration for real this time  So we're gonna we're gonna I think we're gonna yeah, we're gonna run a  Lambick upgrade had first go back to the terminal"
+  },
+  {
+    "start": 700.0,
+    "end": 720.0,
+    "text": "Atlantic  Yeah, that  Upgrade had  This there's a g missing yeah had it in yeah, there's a the Smithin IG in upgrade"
+  },
+  {
+    "start": 720.0,
+    "end": 740.0,
+    "text": "Right  All right, okay there there's a migration now you can run if you see there you see that running upgrade from  Some hash to latest hash that's basically  What happened"
+  },
+  {
+    "start": 740.0,
+    "end": 760.0,
+    "text": "Then do I that's replaced?  Yeah, you don't need it is purely informational that you don't need to do anything now anymore  We did that last time because that migration was not present in the test  the test"
+  },
+  {
+    "start": 760.0,
+    "end": 780.0,
+    "text": "Branch but it was you did happen in the test  Server and the database got  Backed up with so there was a mismatch between what was happening in the test server and what was happening in the repo  Now doesn't mismatch is gone so  Very good to go so it's running"
+  },
+  {
+    "start": 780.0,
+    "end": 800.0,
+    "text": "Yeah, it's running let's run  Is a simple command the  Let's just try to hit the health or meta  I think it's met meta list in endpoint"
+  },
+  {
+    "start": 800.0,
+    "end": 820.0,
+    "text": "Just run a curl command like curl HP  local host 80 api v2 health I think it's either health or healthy local  Yeah, no, Hp you have to put the schema first"
+  },
+  {
+    "start": 820.0,
+    "end": 840.0,
+    "text": "At the beginning at the beginning of the URL  Okay, oh, okay, it's your okay  Yeah, the console yeah, there we go now for his last API  For us lash again v2"
+  },
+  {
+    "start": 840.0,
+    "end": 860.0,
+    "text": "forward slash  V2  And forward slash health or healthy, let's try health first  In that okay try to go up healthy"
+  },
+  {
+    "start": 860.0,
+    "end": 880.0,
+    "text": "See  Healthy just add a white a damn  That's not it man, where is it?  Let's see these guys give a correct. Oh, it's actually just healthy no"
+  },
+  {
+    "start": 880.0,
+    "end": 900.0,
+    "text": "API v2 just I see healthy  You know, no it no it get as well  Okay, just healthy  Okay  And worried all these errors yeah"
+  },
+  {
+    "start": 900.0,
+    "end": 920.0,
+    "text": "Yeah, it's a dare intimidating, but a that's your they're just that intimidating you're not really right or not  These guys break in anything  Trium meta terms then you you actually have to add"
+  },
+  {
+    "start": 920.0,
+    "end": 940.0,
+    "text": "API v2 then for us lash meta for us large  Like this one yeah, that one yeah exactly this one. Yes, no data. No data. Okay. No back to the database viewer  We have to open up the intake database  No, that yeah, you have to actually open up the intake database"
+  },
+  {
+    "start": 940.0,
+    "end": 960.0,
+    "text": "Okay, so disconnect disconnect this one  And connect to  Okay, disconnect I think I'm on that connection open a connection. Yeah, I think you can are your look"
+  },
+  {
+    "start": 960.0,
+    "end": 980.0,
+    "text": "Yep, so yeah, right  So just open up funds  Click on any firm from from main sorry"
+  },
+  {
+    "start": 980.0,
+    "end": 1000.0,
+    "text": "These MFS core okay add a space and new character like be anything really just to have a change made to the database  Okay, save it  There you go. Let's try again now. That's that's same that same endpoint phone just go up and"
+  },
+  {
+    "start": 1000.0,
+    "end": 1020.0,
+    "text": "No data. All right, so  intake  Go back to the API output the"
+  },
+  {
+    "start": 1020.0,
+    "end": 1040.0,
+    "text": "Terminal where where it's actually running and let's  already do it  No, just roll back like all the way to the beginning. Let's see  If there's something yeah, all the other way to the beginning"
+  },
+  {
+    "start": 1040.0,
+    "end": 1060.0,
+    "text": "To do very yeah, okay now now just  Slow down scroll down slowly  Keep going"
+  },
+  {
+    "start": 1060.0,
+    "end": 1080.0,
+    "text": "Okay, hold up a bit  Let's see what's going on here  Okay, there's nothing in there. Uh-huh, no, I figured just keep going now slowly  Stop"
+  },
+  {
+    "start": 1080.0,
+    "end": 1100.0,
+    "text": "Just go up just want one scroll. Let's go up once okay  Okay  Keep going down slowly I'm looking up for"
+  },
+  {
+    "start": 1100.0,
+    "end": 1120.0,
+    "text": "For a graph intake logs  Okay, you see that odd that this is keeping oh it's kept the graphing take  It actually it's it's actually looking for a pattern  Graph intake gets was skipped basically and we have to rename it something else"
+  },
+  {
+    "start": 1120.0,
+    "end": 1140.0,
+    "text": "This graph intake I think we can I think we can rename it right since it sits in baller clink  I think we can rename it just fine"
+  },
+  {
+    "start": 1140.0,
+    "end": 1160.0,
+    "text": "Just click on rename it. Yeah, we're gonna rename we were gonna just add some  Like a date to to the we're just gonna append a date in there. So add a dash  No, that's no no other sharp you get so that the high from yeah 2025 and then high from again"
+  },
+  {
+    "start": 1160.0,
+    "end": 1180.0,
+    "text": "No, yeah, like they have it here  No, that's the Olympic style  Well, that's how they got the Olympic does it we do like only hyphons just add like  09 25 doesn't really matter"
+  },
+  {
+    "start": 1180.0,
+    "end": 1200.0,
+    "text": "Right  Can all right, I think that that one well go back to the  To this one yet  No, no to the bash API we have to restart it"
+  },
+  {
+    "start": 1200.0,
+    "end": 1220.0,
+    "text": "Okay, I see  So control C to kill it  Now run again  Let's see if it skips actually run control C again  Yeah, so yeah, it's still but it recognizes new name"
+  },
+  {
+    "start": 1220.0,
+    "end": 1240.0,
+    "text": "It should be run run clear just so we have a fresh  terminal  Just cool. I think it doesn't it doesn't scroll back right  If you like go up  This force of having doing that"
+  },
+  {
+    "start": 1240.0,
+    "end": 1260.0,
+    "text": "Anyway, great. Yeah, that's a  That run again  I asked because I don't want old output. I would once yeah  Right  Okay, it's running go go up  Like let's see if the  This intake post skip turn out"
+  },
+  {
+    "start": 1260.0,
+    "end": 1280.0,
+    "text": "I think you will see a lot of skip but you're not supposed to see  intake skip so it okay, I don't think it's skipping because it was showing that line here  Yeah, right away, right just go down a little bit keep keeps let's see all the all the skips"
+  },
+  {
+    "start": 1280.0,
+    "end": 1300.0,
+    "text": "Okay, yeah, yeah, sure just make sure it does it's later skipping this  Run sh AI  Oh, yes actually skipped it error not a file. Okay symbolic links will not do here. It doesn't work  You have to do so you have we have already actually using this on"
+  },
+  {
+    "start": 1300.0,
+    "end": 1320.0,
+    "text": "You're actually using this this data  Damn, yeah, I was do you have enough space? I  Do I just hope that it doesn't take too long to download  No, we can't just copy it over from that. Oh, yeah, you're right. You're right. Okay, so just at first just remove that"
+  },
+  {
+    "start": 1320.0,
+    "end": 1340.0,
+    "text": "That's symbolic link you can just delete it. Yeah  Here it's still there  Delete it can just lit it  Yeah, just then copy and paste it to"
+  },
+  {
+    "start": 1340.0,
+    "end": 1360.0,
+    "text": "Okay, let's go from that further from your from your project into  Remember where is  Sit here  Actually don't remember as well. Oh no, okay, maybe it's"
+  },
+  {
+    "start": 1360.0,
+    "end": 1380.0,
+    "text": "Show the path somewhere here  No, I don't think I showed you it. Okay, this one will show the path  Okay, so it's in the repo call it generator"
+  },
+  {
+    "start": 1380.0,
+    "end": 1400.0,
+    "text": "So it should be in this one  Go DB  DB  Yeah, right here all right just copy paste there"
+  },
+  {
+    "start": 1400.0,
+    "end": 1420.0,
+    "text": "So now it's under APIs right yeah other API"
+  },
+  {
+    "start": 1420.0,
+    "end": 1440.0,
+    "text": "You"
+  },
+  {
+    "start": 1440.0,
+    "end": 1460.0,
+    "text": "Yeah, it's gonna tickle  Yeah"
+  },
+  {
+    "start": 1460.0,
+    "end": 1480.0,
+    "text": "All max come with SSDs nowadays, right?  What's it?  All max come with SSDs nowadays, right?  I'm not sure  That's also"
+  },
+  {
+    "start": 1480.0,
+    "end": 1500.0,
+    "text": "I think we should be fine. Let's see. Yeah, how much storage  But this does yeah, I would check that  I mean I haven't had to any storage problem before so let's see"
+  },
+  {
+    "start": 1500.0,
+    "end": 1520.0,
+    "text": "I don't even know how to check the storage  Yeah, man, sorry, I don't I never touch the Mac forum  Think about this Mac that that's where I look for  Yeah, just ask our friend"
+  },
+  {
+    "start": 1520.0,
+    "end": 1540.0,
+    "text": "I"
+  },
+  {
+    "start": 1540.0,
+    "end": 1560.0,
+    "text": "Really need should upgrade I keep getting this  Like that's a big problem. There's always there's always some new update that everyone is too lazy to  I still remember whenever whenever I was working somewhere. Okay, I have I still have a good amount of space. I think"
+  },
+  {
+    "start": 1560.0,
+    "end": 1580.0,
+    "text": "I should be fine, but I should probably also delete some stuff after this  Yeah, you're pretty much on the edge and  Considering that you're working on this product and like  You take alone is six to think about so  Yeah, but it's it should be enough for now. I'll yeah, so I'll do all the delete stuff"
+  },
+  {
+    "start": 1580.0,
+    "end": 1600.0,
+    "text": "There's a lot I haven't there's so much stuff I can delete  So to fear how to delete it  Okay, let's see  Right start. Oh, you had to just rename that again to to to add the like a date sound"
+  },
+  {
+    "start": 1600.0,
+    "end": 1620.0,
+    "text": "At the end same date it can be 2025  Okay, very like yeah"
+  },
+  {
+    "start": 1620.0,
+    "end": 1640.0,
+    "text": "So  just controversy and  Run again  See  I skipped all right, I think it's you see this birth  Yeah, logs that you just get it's calculated some calculations running immediately as it's salty"
+  },
+  {
+    "start": 1640.0,
+    "end": 1660.0,
+    "text": "You see on the left side there is a custom database that was generated  Sweet, we're on the left side on the five  Or at least there's something there  Okay, yeah, okay, it's running fine now you can go go to that second terminal and run the meta terms. Okay"
+  },
+  {
+    "start": 1660.0,
+    "end": 1680.0,
+    "text": "Yeah, it's working out pretty much everything's working out  Let's see  Local let's see if yeah, let's know  You still have to run MVP to you only have the API available now. Oh, I see so we have to now make sure that the front end is working"
+  },
+  {
+    "start": 1680.0,
+    "end": 1700.0,
+    "text": "But I I'll show you I think it's it's  It's gonna work just fine. Oh  Can pee that yeah  And"
+  },
+  {
+    "start": 1700.0,
+    "end": 1720.0,
+    "text": "Okay, great, let's go back to the browser let's see if it works now  Yeah"
+  },
+  {
+    "start": 1720.0,
+    "end": 1740.0,
+    "text": "Nice  Congratulations now you have  There's it going on just let's just make sure open up the dev tools just make sure that it's coming in  It's bringing in data from from your local server"
+  },
+  {
+    "start": 1740.0,
+    "end": 1760.0,
+    "text": "Just click on anything on the left side in our growth gauge whatever  On or go on on the left side of the app there's always more"
+  },
+  {
+    "start": 1760.0,
+    "end": 1780.0,
+    "text": "Go to funds or firms growth. Okay, that works  Go now go back to the dev tools you see this ID 9697 request  Right in the middle  Click on it. Yeah, that's how I look. Yeah, that's that's it. There's there's no notes in there. So we've got a nancy note"
+  },
+  {
+    "start": 1780.0,
+    "end": 1800.0,
+    "text": "Okay, it looks like it's working fine now  Let's add a note just just make sure it's working mutations are working as well on the app  You see on the on the at the bottom fun notes. There are no fun specific notes"
+  },
+  {
+    "start": 1800.0,
+    "end": 1820.0,
+    "text": "Click on the pen  Just write anything in there you can just remove that in write anything you want  Okay, so I click on the safe button the only top left corner  And you see yep, I see it here. Okay, there you go. You see your note"
+  },
+  {
+    "start": 1820.0,
+    "end": 1840.0,
+    "text": "And now if you open the database you can actually see your note  You actually no actually you're gonna see tons of notes because this comes from test so their test notes in there  Okay, so if I go here I should see"
+  },
+  {
+    "start": 1840.0,
+    "end": 1860.0,
+    "text": "There's notes right notes. Yeah notes files. There's also  firm notes and fund notes  at the top  So this was a firm note all right  Oh, I think it was a fund note  Oh, yeah, there you have to there you go"
+  },
+  {
+    "start": 1860.0,
+    "end": 1880.0,
+    "text": "Is it man? Okay, you're good to go. All right. All right. That's good  Finally exciting right. Yeah. Yeah anyway, so um how  I know I'll need to make a change to the profile one so  My what were"
+  },
+  {
+    "start": 1880.0,
+    "end": 1900.0,
+    "text": "How do you make a migration onto these tables?  All right, so  Open up on you you can I think you can use the middle terminal in there  That one's unused you can use that  Yep, whenever yeah  Uh, just close up tray or open up some space for return. Okay, there go"
+  },
+  {
+    "start": 1900.0,
+    "end": 1920.0,
+    "text": "Whenever you you you have a new  um  Change  To to the tables like a new table or dating a adding a new column  or something you're on the  You're on the revision sub command of a lambic so basically you run a lambic"
+  },
+  {
+    "start": 1920.0,
+    "end": 1940.0,
+    "text": "revision  and then  dash him  And a message the basically you try to to to be very  Suscent about"
+  },
+  {
+    "start": 1940.0,
+    "end": 1960.0,
+    "text": "What is what the message is like add a new table for or like add new table for  What was it you're on on on  profile  On the profile, but no, no you're you're gonna make a new change on on the profile table, right?  So add new column acts name on the yeah, like add new column"
+  },
+  {
+    "start": 1960.0,
+    "end": 1980.0,
+    "text": "profile  But you actually name the column in there like add new column name of the column to profile  Right, right and then so with these changes do I just create another uh versions here?  If no, you can't actually run this command you can run that like now uh, no, you're not in the"
+  },
+  {
+    "start": 1980.0,
+    "end": 2000.0,
+    "text": "In the folder you have to go into the API folder run source  And uh and then run the viewer on this command  Yeah, so mainly what I'm trying to say is like um to make to actually write the"
+  },
+  {
+    "start": 2000.0,
+    "end": 2020.0,
+    "text": "You know the new column. No, you won't have to  You won't have I mean cure to the fire creation is done by a lambic. Oh  You don't write that by hand  Basically, the all lambic will take them your your revision message add underscores basically replace this basis for underscores"
+  },
+  {
+    "start": 2020.0,
+    "end": 2040.0,
+    "text": "And then append at the end a new file with okay. I see so we'll take this message here  And create a file like this we'll create a file with a new hash uh revision hash  And uh new date we will we will propend the date as well and with a bear"
+  },
+  {
+    "start": 2040.0,
+    "end": 2060.0,
+    "text": "um  Migration file basically that there's gonna be nothing in there and then you come in and add your your changes  Okay, so then um it'll create this file oh, I see so when you do revision m and then add new profile"
+  },
+  {
+    "start": 2060.0,
+    "end": 2080.0,
+    "text": "It'll create a new file called 2025 09 25 and then distinct  Dot pie. Yeah, and then you add your your changes in right?  Yes, exactly. Yes. Okay. I see yeah, and then I'm sure  Um, I can look back at these provisions and see how you guys you guys did it"
+  },
+  {
+    "start": 2080.0,
+    "end": 2100.0,
+    "text": "Yeah, to did you couldn't have a better reference than what you have right now in there. So just  Just do the same thing that we've been doing so far sounds good. Okay. Yeah. Okay. So then you just create this file  You know, and then run it um"
+  },
+  {
+    "start": 2100.0,
+    "end": 2120.0,
+    "text": "Yeah, just don't forget you have to do it in the API folder with this the end active and one off  Okay, I see all right, and so then once I do that  Then I can you know create a PR push push it um and then um what was the next thing? I also need to work on the MVP folder"
+  },
+  {
+    "start": 2120.0,
+    "end": 2140.0,
+    "text": "Uh to pull this but then so what what should happen is like once I create the the column  Um, it'll it's it's it should show up on my API database, right?  And then with the new data and then once that happens then I can um test it on every P  Yeah, I encourage you to look also into um"
+  },
+  {
+    "start": 2140.0,
+    "end": 2160.0,
+    "text": "The models in the API folder  Because just creating just adding in a new column is not enough. We have to actually map it to  To the API if you just go down a little bit  Mm-hmm. You see"
+  },
+  {
+    "start": 2160.0,
+    "end": 2180.0,
+    "text": "Uh, going to there there's a graffiti underscore API folder  Just under the unit go up well. Yeah here. Yeah. All right  Uh API v2 oh, no actually no sorry collapse that  Models that's the one. Oh, okay, okay, and um"
+  },
+  {
+    "start": 2180.0,
+    "end": 2200.0,
+    "text": "You see there is a profile is already made for you. It's there already  So you don't have to create a new model you have to just modify this one  Okay, I didn't see that uh, it's good thing you pointed out. I didn't know about this  Okay, yeah, you have see if you don't do that uh, just expand expand the file, please so you can actually because there is more to that"
+  },
+  {
+    "start": 2200.0,
+    "end": 2220.0,
+    "text": "Okay  Okay, that's the if you go up you see there is uh, that the the the profile classes inheriting  DB model API base with time simpda that's basically bringing"
+  },
+  {
+    "start": 2220.0,
+    "end": 2240.0,
+    "text": "SQL to me  classes and you see that online 18  It specifies the name of the table and the lines below specify  the the mapping of of of the table columns to to to"
+  },
+  {
+    "start": 2240.0,
+    "end": 2260.0,
+    "text": "Properties in this class  That's how the mapping occurs. So  uh  If you go further down at the end of the file you see there is a serializer as well  This serializer is what actually uh builds what's been sent"
+  },
+  {
+    "start": 2260.0,
+    "end": 2280.0,
+    "text": "uh  via the API that's that that's what's built the json  that uh, just now go up a little bit that's the actually uh  This is the difference for the laser the main one is this profile serializer just just go up uh, yeah  You see in there  This is where uh, I think this is one one of the most fleshed out ones in terms of what we can do with a serializer"
+  },
+  {
+    "start": 2280.0,
+    "end": 2300.0,
+    "text": "uh, but you probably just  uh, add more fields in in the subclass meta in there  You see there's a 4c e for for c in"
+  },
+  {
+    "start": 2300.0,
+    "end": 2320.0,
+    "text": "Online 84 just just go down a bit  Online 84 you see there is this yeah, so you actually build the fields in there  And you probably just add a new line with profile dot name of your property  So"
+  },
+  {
+    "start": 2320.0,
+    "end": 2340.0,
+    "text": "And obviously you have to define the property at the beginning of the class  Um, like the other ones so this is there this is your reference you you have you have this model ready to go already  You don't need to modify it  Uh, you have the Olympic uh or or of our uh, uh, migration files as a reference as well"
+  },
+  {
+    "start": 2340.0,
+    "end": 2360.0,
+    "text": "I think you have enough to to on the api side to to work on on on your changes  On the MVP side on the front-end side  There are some things you have to take in consideration to"
+  },
+  {
+    "start": 2360.0,
+    "end": 2380.0,
+    "text": "again  But I think it's gonna uh you  You it's a little bit more flexible giving that's job script and  What not  but uh, uh, uh, it's good to to go into  The models in there  um, and also um  Specifying in in the in the in the profile"
+  }
+]

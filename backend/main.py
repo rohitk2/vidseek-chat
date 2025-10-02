@@ -252,15 +252,21 @@ async def chat_with_gemini(chat_data: ChatMessage):
         transcript_context = load_transcript_context()
         
         # Create the model - Updated to use the current model name
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Create context-aware prompt
         system_prompt = f"""You are an AI assistant helping users understand and analyze their video content. 
-        
+
 Video Transcript Context:
 {transcript_context}
 
 Based on the above transcript, please answer the user's question about their video. 
+Format your response using proper markdown:
+- Use **bold** for emphasis
+- Use bullet points with - for lists
+- Use proper paragraphs for readability
+- Reference specific timestamps when relevant (e.g., "At 2:15...")
+
 If the question relates to specific timestamps or content in the video, reference the relevant parts of the transcript.
 If the question is not related to the video content, you can provide general assistance but try to relate it back to the video when possible.
 

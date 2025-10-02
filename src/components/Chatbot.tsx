@@ -3,6 +3,8 @@ import { Send, MessageCircle, Sparkles, User, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   id: string;
@@ -133,7 +135,20 @@ export const Chatbot = ({ videoFileName }: ChatbotProps) => {
                     : 'bg-muted mr-12'
                   }
                 `}>
-                  <p className="leading-relaxed">{message.content}</p>
+                  {message.role === 'assistant' ? (
+                    <div className="leading-relaxed prose prose-sm max-w-none dark:prose-invert
+                      prose-headings:text-foreground prose-p:text-foreground 
+                      prose-strong:text-foreground prose-ul:text-foreground 
+                      prose-ol:text-foreground prose-li:text-foreground
+                      prose-code:text-foreground prose-pre:bg-background/50
+                      prose-blockquote:text-foreground prose-blockquote:border-border">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {message.content}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    <p className="leading-relaxed">{message.content}</p>
+                  )}
                 </div>
               </div>
             ))}

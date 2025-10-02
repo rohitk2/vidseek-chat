@@ -30,7 +30,7 @@ def find_best_segments(user_query):
     
     # Initialize Gemini LLM
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.0-flash",
         google_api_key=gemini_api_key,
         temperature=0.3
     )
@@ -144,48 +144,38 @@ Keep it professional and informative."""
         return f"\nSegments found: {segments_tuples}\n"
 
 def extract_segments_fallback(response_text, transcript_data):
-    """Fallback method to extract segments if parsing fails"""
+    """Extract segments using regex fallback when structured parsing fails"""
     segments = []
     
-    # Try to find time ranges in the response
-    time_patterns = [
-        r'"start":\s*(\d+\.\d+).*?"end":\s*(\d+\.\d+)',
-        r'(\d+\.\d+)\s*-\s*(\d+\.\d+)',
-        r'(\d+\.\d+)\s*to\s*(\d+\.\d+)'
-    ]
+    # Look for time ranges in the response
+    time_pattern = r'(\d+):(\d+)-(\d+):(\d+)'
+    matches = re.findall(time_pattern, response_text)
     
-    for pattern in time_patterns:
-        matches = re.findall(pattern, response_text, re.DOTALL)
-        for match in matches:
-            try:
-                start_time = float(match[0])
-                end_time = float(match[1])
-                # Return dictionary format instead of tuple
-                segments.append({
-                    "start": start_time,
-                    "end": end_time,
-                    "relevance_score": 7.0,  # Default score
-                    "explanation": "Segment extracted from fallback parsing"
-                })
-                if len(segments) >= 3:
-                    break
-            except ValueError:
-                continue
-        if len(segments) >= 3:
-            break
-    
-    # If still not enough, use first 3 from transcript
-    while len(segments) < 3 and len(segments) < len(transcript_data):
-        segment = transcript_data[len(segments)]
-        # Return dictionary format instead of tuple
+    for match in matches:
+        start_min, start_sec, end_min, end_sec = match
+        start_time = int(start_min) * 60 + int(start_sec)
+        end_time = int(end_min) * 60 + int(end_sec)
+        
+        # Return dictionary instead of tuple
         segments.append({
-            "start": segment['start'],
-            "end": segment['end'],
-            "relevance_score": 5.0,  # Default score
-            "explanation": "Default segment from transcript"
+            "start": start_time,
+            "end": end_time,
+            "relevance_score": 7.0,  # Default score
+            "explanation": "Found via fallback method"
         })
     
-    return segments[:3]
+    # If no time patterns found, use first few transcript segments
+    if not segments and transcript_data:
+        for i in range(min(3, len(transcript_data))):
+            segment = transcript_data[i]
+            segments.append({
+                "start": segment.get('start', 0),
+                "end": segment.get('end', 30),
+                "relevance_score": 5.0,
+                "explanation": "Default transcript segment"
+            })
+    
+    return segments
 
 # Example usage:
 if __name__ == "__main__":
